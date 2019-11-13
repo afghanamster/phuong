@@ -4,7 +4,7 @@ ENV VERSION v4.6.2-beta
 
 RUN apt-get update && apt-get install -y wget
 
-RUN wget https://github.com/xmrig/xmrig/releases/download/v$VERSION/xmrig-$VERSION-xenial-x64.tar.gz
+RUN wget https://github.com/xmrig/xmrig/releases/download/$VERSION/xmrig-$VERSION-xenial-x64.tar.gz
 
 RUN tar -xvzf xmrig-$VERSION-xenial-x64.tar.gz
 
