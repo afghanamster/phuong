@@ -1,4 +1,4 @@
-FROM ubuntu 16.04
+FROM ubuntu:16.04
 
 ENV VERSION 4.6.2-beta
 
