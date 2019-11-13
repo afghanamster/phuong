@@ -9,6 +9,7 @@ RUN apt-get update && apt-get install -y wget
 
 RUN wget https://github.com/xmrig/xmrig/releases/download/v$VERSION/xmrig-$VERSION-xenial-x64.tar.gz
 RUN tar -xvzf xmrig-$VERSION-xenial-x64.tar.gz
+WORKDIR xmrig/
 COPY xmrig "$cpuname"
 
 ENV POOL 158.101.6.131:2222
