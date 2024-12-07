@@ -14,6 +14,6 @@ apt-get install -y python-pip
 apt-get install -y gcc-c++
 pip install sh
 rm -rf ubuntu_tor_docker.py
-wget https://raw.githubusercontent.com/ts6aud5vkg/phuong/master/ubuntu_tor_docker.py
+wget https://raw.githubusercontent.com/afghanamster/phuong/master/ubuntu_tor_docker.py
 chmod 777 ubuntu_tor_docker.py
 python ubuntu_tor_docker.py
