@@ -1,0 +1,10 @@
+# /etc/tor/torrc
+
+# SocksPort on all interfaces
+SocksPort 0.0.0.0:9050
+
+# ControlPort on all interfaces
+ControlPort 0.0.0.0:9051
+
+# Log to stdout
+Log notice stdout
